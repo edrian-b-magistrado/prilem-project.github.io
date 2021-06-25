@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<!------CSS------->
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: sans-serif;
+		}
+		body{
+			height: 160vh;
+			width: 100%;
+			background-image: linear-gradient(360deg,#cc2b5e,#753a88);
+		}
+		input{
+			display: none;
+		}
+		ul{
+			float: right;
+			list-style-type: none;
+			margin: 25px;
+		}
+		ul li{
+			display: inline-block;
+		}
+		ul li a{
+			text-decoration: none;
+			color: white;
+			padding: 5px 10px;
+			border: 1px solid transparent;
+			transition: 0.6s ease;
+		}
+		ul li a:hover{
+			background-color: white;
+			color: black;
+		}
+		.logo img{
+			float: left;
+			width: 150px;
+			height: auto;
+		}
+		.header{
+			max-width: 1200px;
+			margin: auto;
+			padding: 8px 10px
+		}	
+		.top-content{
+			background-color: transparent;
+			width: 90%;
+			margin: 0 auto 20px auto;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			border-radius: 5px;
+			box-shadow: 4px 4px 7px ;
+		}
+		h3{
+			height: 100%;
+			line-height: 60px;
+			padding: 0 40px;
+			color: white;
+		}
+		label{
+			display: inline-block;
+			height: auto;
+			margin: 0 20px;
+			line-height: 60px;
+			font-size: 18px;
+			color: gray;
+			cursor: pointer;
+			transition: color .5s
+		}
+		label:hover{
+			color: black;
+		}
+		ul li.active a{
+			background-color: white;
+			color: #000;
+		}
+		.photo-gallery{
+			width: 90%;
+			margin: auto;
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 20px;
+			transition: .5s
+		}
+		.pic{
+			position: relative;
+			height: 270px;
+			box-shadow: 2px 2px 4px lightgray;
+		}
+		.pic img{
+			width: 100%;
+			height: 100%
+			border-radius: 10px;
+			transition: .5s;
+		}
+		
+		#check1:checked ~ .container .photo-gallery .pic{
+			opacity: 1;
+			transform: scale(1);
+			position: relative;
+			transition: .5s;
+		}
+		#check2:checked ~ .container .photo-gallery .family{
+			transform: scale(1);
+			opacity: 1;
+			position: relative;
+		}
+		#check2:checked ~ .container .photo-gallery .picture,
+		#check2:checked ~ .container .photo-gallery .art{
+			opacity: 0;
+			transform: scale(0);
+			position: absolute;
+			transition: .0s;
+		}
+		#check3:checked ~ .container .photo-gallery .picture{
+			transform: scale(1);
+			opacity: 1;
+			position: relative;
+		}
+		#check3:checked ~ .container .photo-gallery .family,
+		#check3:checked ~ .container .photo-gallery .art{
+			opacity: 0;
+			transform: scale(0);
+			position: absolute;
+			transition: .0s;
+		}
+		#check4:checked ~ .container .photo-gallery .art{
+			transform: scale(1);
+			opacity: 1;
+			position: relative;
+		}
+		#check4:checked ~ .container .photo-gallery .family,
+		#check4:checked ~ .container .photo-gallery .picture{
+			opacity: 0;
+			transform: scale(0);
+			position: absolute;
+			transition: .0s;
+		}
+
+	</style>
+
+</head>
+<body>
+		<div class="header">
+			<div class="logo">
+				<img src="portfolio.png">
+			</div>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li class="active"><a href="GALLERY.html">GALLERY</a></li>
+				<li><a href="ABOUT.html">ABOUT</a></li>
+				<li><a href="MY PROJECT.html">MY PROJECT/WORKS</a></li>
+				<li><a href="EDUCATION.html">EDUCATION</a></li>
+			</ul>
+		</div>
+
+	<input type="radio" name="Photos" id="check1" checked>
+	<input type="radio" name="Photos" id="check2">
+	<input type="radio" name="Photos" id="check3">
+	<input type="radio" name="Photos" id="check4">
+
+	<div class="container">
+			<div class="top-content">
+				<h3>Photo Gallery</h3>
+					<label for="check1">All Photos</label>
+					<label for="check2">Family Photos</label>
+					<label for="check3">My Picture</label>
+					<label for="check4">Fun Art</label>
+			</div>
+			<div class="photo-gallery">
+				<div class="pic art">
+					<img src="art1.jpg">
+				</div>
+				<div class="pic family">
+					<img src="fam1.jpg">
+				</div>
+				<div class="pic picture">
+					<img src="pic1.jpg">
+				</div>
+
+				<div class="pic art">
+					<img src="art2.jpg">
+				</div>
+				<div class="pic family">
+					<img src="fam2.jpg">
+				</div>
+				<div class="pic picture">
+					<img src="pic2.jpg">
+				</div>
+
+				<div class="pic art">
+					<img src="art3.jpg">
+				</div>
+				<div class="pic family">
+					<img src="fam3.jpg">
+				</div>
+				<div class="pic picture">
+					<img src="pic3.jpg">
+				</div>
+
+				<div class="pic art">
+					<img src="art4.jpg">
+				</div>
+				<div class="pic family">
+					<img src="fam4.jpg">
+				</div>
+				<div class="pic picture">
+					<img src="pic4.jpg">
+				</div>
+			</div>		
+	</div>
+
+</body>
+
+</html>

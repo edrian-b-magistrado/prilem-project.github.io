@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Project / Works</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: Century Gothic;
+		}
+		body{
+			height: 630vh;
+			width: 100%;
+			background-image: linear-gradient(360deg,#cc2b5e,#753a88);
+		}
+		ul{
+			float: right;
+			list-style-type: none;
+			margin: 25px;
+		}
+		ul li{
+			display: inline-block;
+		}
+
+		ul li a{
+			text-decoration: none;
+			color: white;
+			padding: 5px 10px;
+			border: 1px solid transparent;
+			transition: 0.6s ease;
+		}
+		ul li a:hover{
+			background-color: white;
+			color: black;
+		}
+		ul li.active a{
+			background-color: white;
+			color: #000;
+		}
+		.logo img{
+			float: left;
+			width: 150px;
+			height: auto;
+		}
+		.container{
+			position: absolute;
+			top: 23%;
+		}		
+		.calendar{
+			position: absolute;
+			font-weight: normal;
+			font-size: 60px;
+			font-family: Monospace,	Courier New;
+			top: 13%;
+			left: 30%;
+			color: white;
+		}
+		.month{
+			width: 49%;
+			text-align: center;
+			font-size: 23px;
+			color: #fff;
+			padding: 15px;
+			letter-spacing: 1px;
+			border: 1px solid transparent;
+			background-color: rgba(0,0,0,0.7);
+			float: left;
+		}
+		table th{
+			color: #fff;
+			background-color: rgba(0,0,0,0.1);
+		}
+		table,th,td{
+			width: 53px;
+			table-layout: fixed;
+			text-align: center;
+			font-size: 15px;
+			border-collapse: collapse;
+			border: 1px transparent;
+			color: #fff;
+			padding: 35px;
+		}
+		tr,th,td{
+			padding: 15px;
+		}
+		tr,th{
+			font-size: 15px;
+		}
+		th{
+			color: #fff;
+		}
+		td{
+			background-color: rgba(0,0,0,0.4);
+		}
+		td.hover{
+			background-color: white;
+			color: black;
+		}
+		.one{
+			background-color: rgba(0,0,0,0.6);
+			color: coral;
+		}
+		.two{
+			background-color: rgba(0,0,0,0.6);
+			color: plum;
+		}
+		.three{
+			background-color: rgba(0,0,0,0.6);
+			color: aquamarine;
+		}
+		.one:hover{
+			background-color: white;
+			transition: 0.8s ease;
+		}
+		.two:hover{
+			background-color: white;
+			transition: 0.8s ease;
+		}
+		.three:hover{
+			background-color: white;
+			transition: 0.8s ease;
+		}
+		[data-tooltip] {
+			position: relative;
+			cursor: default;
+			font-family: times new roman;
+		}
+		[data-tooltip]::after{
+			position: absolute;
+			width: 140px;
+			left: calc(50% - 70px);
+			bottom: -40px;
+			text-align: center;
+			box-sizing: border-box;
+
+			content: attr(data-tooltip);
+			color: white black;
+			background: transparent;
+			padding: 8px;
+			border-radius: 30px solid transparent;
+			box-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+			font-weight: bold;
+
+			visibility: hidden;
+			opacity: 0;
+			transform: translateY(10px);
+			transition: opacity 0.3s, transform 0.2s;
+		}
+		[data-tooltip]:hover::after{
+			opacity: 1;
+			visibility: visible;
+			transform: translateY(0);
+		}
+	</style>
+</head>
+
+<body>
+	<div>
+		<div class="logo">
+				<img src="portfolio.png">
+			</div>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="GALLERY.html">GALLERY</a></li>
+				<li><a href="ABOUT.html">ABOUT</a></li>
+				<li class="active"><a href="MY PROJECT.html">MY PROJECT/WORKS</a></li>
+				<li><a href="EDUCATION.html">EDUCATION</a></li>
+			</ul>
+		</div>
+	<header class="calendar">Calendar 2021</header>
+			
+	<!---------January---------->
+	<div class="container">
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>January</strong>
+				<p>Regular Holiday: January 1 (Fri) Event: (New Year's Day)</p>
+			<br>
+		</div>
+				<tr>
+					<th >Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="one" data-tooltip="New Year">1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+					<td>21</td>
+					<td>22</td>
+					<td>23</td>
+				</tr>
+				<tr>
+					<td>24</td>
+					<td>25</td>
+					<td>26</td>
+					<td>27</td>
+					<td>28</td>
+					<td>29</td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<td>31</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>			
+			</div>	
+		</table>	
+	</section>
+<br>
+
+<!-------February------>
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>February</strong>
+				<p>Special(Non-Working)Holliday: February 12 (Fri) Event: (Chinese New Year)</p>
+				<p>Special(Non-Working)Holliday: February 25 (Sat) Event: (EDSA People Power Revolution)</p>
+		</div>
+				<tr>
+					<th >Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+					<td class="two" data-tooltip="Chinese New Year">12</td>
+					<td>13</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td>22</td>
+					<td>23</td>
+					<td>24</td>
+					<td class="two" data-tooltip="EDSA People Power Revolution">25</td>
+					<td>26</td>
+					<td>27</td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</div>
+		</table>
+	</section>
+<br>
+
+<!------March----->
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>March</strong>
+			<br>
+		</div>
+				<tr>
+					<th >Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+					<td>13</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td>22</td>
+					<td>23</td>
+					<td>24</td>
+					<td>25</td>
+					<td>26</td>
+					<td>27</td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td>29</td>
+					<td>30</td>
+					<td>31</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</div>	
+		</table>
+	</section>
+<br>
+
+<!-----April----->
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>April</strong>
+				<p>Regular Holiday: April 1 (Thu) Event: (Maundy Thursday)</p>
+				<p>Regular Holiday: April 2 (Fri) Event: (Good Friday)</p>
+				<p>Special(Non-Working)Holliday: April 3 (Sat) Event: (Black Saturday)</p>
+				<p>Regular Holiday: April 9 (Fri) Event: (Araw ng Kagitingan)</p>
+		</div>
+				<tr>
+					<th >Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="one" data-tooltip="Maundy Thursday">1</td>
+					<td class="one" data-tooltip="Good Friday">2</td>
+					<td class="two" data-tooltip="Black Saturday">3</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td class="one" data-tooltip="Araw ng Kagitingan">9</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+					<td>21</td>
+					<td>22</td>
+					<td>23</td>
+					<td>24</td>
+				</tr>
+				<tr>
+					<td>25</td>
+					<td>26</td>
+					<td>27</td>
+					<td>28</td>
+					<td>29</td>
+					<td>30</td>
+					<td></td>
+				</tr>
+			</div>	
+		</table>
+	</section>
+<br>
+
+<!-------May----->
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>May</strong>
+				<p>Regular Holiday: May 1 (Sat) Event: (Labor Day)</p>
+			<br>
+		</div>
+				<tr>
+					<th >Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="one" data-tooltip="Labor Day">1</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+					<td>15</td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+					<td>21</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>23</td>
+					<td>24</td>
+					<td>25</td>
+					<td>26</td>
+					<td>27</td>
+					<td>28</td>
+					<td>29</td>
+				</tr>
+				<tr>
+					<td>30</td>
+					<td>31</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</div>	
+		</table>
+	</section>
+<br>
+
+<!------June----->
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>June</strong>
+				<p><p>Regular Holiday: June 12 (Sat) Event: (Independence Day)</p></p>
+			<br>
+		</div>
+				<tr>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+					<td class="one" data-tooltip="Independence Day">12</td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+				</tr>
+				<tr>
+					<td>20</td>
+					<td>21</td>
+					<td>22</td>
+					<td>23</td>
+					<td>24</td>
+					<td>25</td>
+					<td>26</td>
+				</tr>
+				<tr>
+					<td>27</td>
+					<td>28</td>
+					<td>29</td>
+					<td>30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</div>	
+		</table>
+	</section>
+<br>
+
+<!-----July----->
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>July</strong>
+				<br>
+		</div>
+				<tr>
+					<th >Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+				</tr>
+				<tr>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+					<td>21</td>
+					<td>22</td>
+					<td>23</td>
+					<td>24</td>
+				</tr>
+				<tr>
+					<td>25</td>
+					<td>26</td>
+					<td>27</td>
+					<td>28</td>
+					<td>29</td>
+					<td>30</td>
+					<td>31</td>
+				</tr>
+			</div>	
+		</table>
+	</section>
+<br>
+
+<!------August----->
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>August</strong>
+				<p>Special(Non-Working)Holliday: August 21 (Sat) Event: (Ninoy Aquino Day)</p>
+				<p>Regular Holiday: August 30 (Mon) Event: (National Hero Day)</p>
+		</div>
+				<tr>
+					<th >Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+					<td class="two" data-tooltip="Ninoy Aquino Day">21</td>
+				</tr>
+				<tr>
+					<td>22</td>
+					<td>23</td>
+					<td>24</td>
+					<td>25</td>
+					<td>26</td>
+					<td>27</td>
+					<td>27</td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td>29</td>
+					<td class="one" data-tooltip="National Hero Day">30</td>
+					<td>31</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</div>	
+		</table>
+	</section>
+<br>
+
+<!-------September------>
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>September</strong>
+			<br>
+		</div>
+				<tr>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+				</tr>
+				<tr>
+					<td>19</td>
+					<td>20</td>
+					<td>21</td>
+					<td>22</td>
+					<td>23</td>
+					<td>24</td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>26</td>
+					<td>27</td>
+					<td>28</td>
+					<td>29</td>
+					<td>30</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</div>	
+		</table>
+	</section>
+<br>
+
+<!----October----->
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>October</strong>
+			<br>
+		</div>
+				<tr>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>1</td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+					<td>13</td>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+					<td>21</td>
+					<td>22</td>
+					<td>23</td>
+				</tr>
+				<tr>
+					<td>24</td>
+					<td>25</td>
+					<td>26</td>
+					<td>27</td>
+					<td>28</td>
+					<td>29</td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<td>31</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</div>	
+		</table>
+	</section>
+<br>
+
+<!------November---->
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>November</strong>
+				<p>Special(Non-Working)Holliday: November 1 (Mon) Event: (All Saint's Day)</p>
+				<p>Special(Working)Holliday: November 2 (Tue) Event: (All Soul's Day)</p>
+				<p>Regular Holiday: November 30 (Tue) Event: (Bonifacio Day)</p>
+		</div>
+				<tr>
+					<th>Sun</th>
+					<th>Mon</th>
+					<th>Tue</th>
+					<th>Wed</th>
+					<th>Thu</th>
+					<th>Fri</th>
+					<th>Sat</th>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="two" data-tooltip="All Saint's Day">1</td>
+					<td class="three" data-tooltip="All Soul's Day">2</td>
+					<td>3</td>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>8</td>
+					<td>9</td>
+					<td>10</td>
+					<td>11</td>
+					<td>12</td>
+					<td>13</td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>15</td>
+					<td>16</td>
+					<td>17</td>
+					<td>18</td>
+					<td>19</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>21</td>
+					<td>22</td>
+					<td>23</td>
+					<td>24</td>
+					<td>25</td>
+					<td>26</td>
+					<td>27</td>
+				</tr>
+				<tr>
+					<td>28</td>
+					<td>29</td>
+					<td class="one" data-tooltip="Bonifacio Day">30</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</div>	
+		</table>
+	</section>
+<br>
+
+<!-------December------>
+<section id="calendar">
+	<table>
+		<div class="month">
+			<strong>December</strong>
+				<p>Special(Non-Working)Holliday: December 8 (Wed) Event: (Feast of Immaculation Conception of Mary)</p>
+				<p>Special(Working)Holliday: December 24 (Fri) Event: (Cristmas Eve)</p>
+				<p>Regular Holiday: December 25 (Sat) Event: (Cristmas Day)</p>
+				<p>Regular Holiday: December 30 (Thu) Event: (Rizal Day)</p>
+				<p>Special(Working)Holliday: December 31 (Fri) Event: (Last Day of the Year)</p>
+		</div>
+			<tr>
+				<th>Sun</th>
+				<th>Mon</th>
+				<th>Tue</th>
+				<th>Wed</th>
+				<th>Thu</th>
+				<th>Fri</th>
+				<th>Sat</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>6</td>
+				<td>7</td>
+				<td class="two" data-tooltip="Feast of Immaculation Conception of Mary">8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>13</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<td>19</td>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td class="three" data-tooltip="Cristmas Eve">24</td>
+				<td class="one" data-tooltip="Cristmas Day">25</td>
+			</tr>
+			<tr>
+				<td>26</td>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td class="one" data-tooltip="Rizal Day">30</td>
+				<td class="three" data-tooltip="Last Day of the Year">31</td>
+				<td></td>
+			</tr>
+		</div>	
+	</table>
+</section>
+</div>
+
+</body>
+</html>

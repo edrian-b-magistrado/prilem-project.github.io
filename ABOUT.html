@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+	<style type="text/css">
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(360deg,#cc2b5e,#753a88);
+}
+
+.header{
+  float: right;
+  list-style-type: none;
+  margin: 15px;
+}
+ul{
+  list-style-type: none;
+  margin: 15px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  transition: 0.6s ease;
+}
+ul li a:hover{
+  background-color: white;
+  color: black;
+}
+ul li.active a{
+  background-color: white;
+  color: #000;
+}
+.logo img{
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  width: 150px;
+  height: auto;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.resume {
+  width: 70%;
+  background-color: transparent;
+  border-radius: 30px solid transparent;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.6);
+  display: flex;
+  margin-top: 15%;
+  margin-left: 15%;
+  float: bottom;
+  color: white;
+  margin: 50px auto;
+}
+}
+
+.resume .resume_left {
+  width: 280px;
+  background: #0bb5f4;
+  background-color: transparent;
+}
+
+.resume .resume_left .resume_profile {
+  width: absolute;
+  height: absolute;
+  background-image: transparent;
+}
+
+.resume .resume_left .resume_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.resume .resume_left .resume_content {
+  padding: 0 25px;
+}
+
+.resume .title {
+  margin-bottom: 20px;
+}
+
+.resume .resume_left .bold {
+  color: #fff;
+}
+
+.resume .resume_left .regular {
+  color: #b1eaff;
+}
+
+.resume .resume_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #b1eaff;
+}
+
+.resume .resume_left .resume_item:last-child,
+.resume .resume_right .resume_item:last-child {
+  border-bottom: 0px;
+}
+
+.resume .resume_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.resume .resume_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.resume .resume_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.resume .icon i,
+.resume .resume_right .resume_hobby ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.resume .resume_left ul li .data {
+  color: #b1eaff;
+}
+
+.resume .resume_left .resume_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume .resume_left .resume_skills ul li .skill_name {
+  width: 25%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.resume .resume_left .resume_skills ul li .skill_per {
+  width: 15%;
+}
+
+.resume .resume_left .resume_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.resume .resume_left .resume_social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.resume .resume_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+  background-color: transparent;
+}
+
+.resume .resume_right .bold {
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul,
+.resume .resume_right .resume_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.resume .resume_right ul li {
+  position: relative;
+}
+
+.resume .resume_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.resume .resume_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.resume .resume_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.resume .resume_right .resume_work ul li:before,
+.resume .resume_right .resume_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #0bb5f4;
+}
+
+.resume .resume_right .resume_work ul li:after,
+.resume .resume_right .resume_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115px;
+  background: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume .resume_right .resume_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li i {
+  font-size: 30px;
+}
+
+.resume .resume_right .resume_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #0bb5f4;
+}
+
+.resume .resume_right .resume_hobby ul li:last-child:before {
+  display: none;
+}
+	</style>
+</head>
+<body>
+	<div class="header">
+    <div class="logo">
+        <img src="portfolio.png">
+    </div>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="GALLERY.html">GALLERY</a></li>
+				<li class="active"><a href="ABOUT.html">ABOUT</a></li>
+				<li><a href="MY PROJECT.html">MY PROJECT/WORKS</a></li>
+				<li><a href="EDUCATION.html">EDUCATION</a></li>
+			</ul>
+		</div>
+
+	<!-------HEADER LEFT----->
+	<div class="resume">
+		<!------INFORMATION--->
+   <div class="resume_left">
+     <div class="resume_profile">
+       <img src="i.jpg">
+     </div>
+     <div class="resume_content">
+       <div class="resume_item resume_info">
+         <div class="title">
+           <p class="bold">Edrian Beredo Magistrado</p>
+           <p class="regular">Gamer</p>
+         </div>
+         <ul>
+           <li>
+             <div class="icon">
+               <i class="fas fa-map-marked-alt"></i>
+             </div>
+             <div class="data">
+               #34 Cabuloan Sta. Maria <br>
+				Pangasinan, Philippines 2440<br>
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fas fa-mobile-alt"></i>
+             </div>
+             <div class="data">
+               +63 977 031 2664
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fas fa-envelope"></i>
+             </div>
+             <div class="data">
+              edrian.magistrado
+             </div>
+           </li>
+         </ul>
+       </div>
+
+      <!--------SKILLS------>
+       <div class="resume_item resume_skills">
+         <div class="title">
+           <p class="bold">skill's</p>
+         </div>
+         <ul>
+           <li>
+             <div class="skill_name">
+               HTML
+             </div>
+             <div class="skill_progress">
+               <span style="width: 60%;"></span>
+             </div>
+             <div class="skill_per">60%</div>
+           </li>
+           <li>
+             <div class="skill_name">
+               CSS
+             </div>
+             <div class="skill_progress">
+               <span style="width: 30%;"></span>
+             </div>
+             <div class="skill_per">30%</div>
+           </li>
+           <li>
+             <div class="skill_name">
+               JS
+             </div>
+             <div class="skill_progress">
+               <span style="width: 8%;"></span>
+             </div>
+             <div class="skill_per">8%</div>
+           </li>
+           <li>
+             <div class="skill_name">
+               JQUERY
+             </div>
+             <div class="skill_progress">
+               <span style="width: 2%;"></span>
+             </div>
+             <div class="skill_per">2%</div>
+           </li>
+         </ul>
+       </div>
+
+      <!-------SOCIAL MEDIA---->
+       <div class="resume_item resume_social">
+         <div class="title">
+           <p class="bold">Social Media</p>
+         </div>
+         <ul>
+           <li>
+             <div class="icon">
+               <i class="fab fa-facebook-square"></i>
+             </div>
+             <div class="data">
+               <p class="semi-bold">Facebook</p>
+               <p>Edrian Magistrado</p>
+             </div>
+           </li>
+           <li>
+             <div class="icon">
+               <i class="fab fa-facebook-messenger"></i>
+             </div>
+             <div class="data">
+               <p class="semi-bold">Messenger</p>
+               <p>/magistrado.edrian</p>
+             </div>
+           </li>
+         </ul>
+       </div>
+     </div>
+  </div>
+
+  <!-------HEADER RIGHT---->
+  <div class="resume_right">
+  	<!-------ABOUT ME---->
+  <div class="resume_righ">
+    <div class="resume_item resume_about">
+        <div class="title">
+           <p class="bold">Objective</p>
+         </div>
+        <p>To be able to find an internship wherein I can fully utilize my skills and knnowledge, and further enhance them to contribute to my developement as a person; and to be able to be part of a team whose development I can contribute to as a member, in preparation for my future career.</p>
+    </div>
+
+    <!-------WORK EXPERIENCE------->
+    <div class="resume_item resume_work">
+        <div class="title">
+           <p class="bold">Certificate Related in IT</p>
+         </div>
+        <ul>
+            <li>
+                <div class="date">2016</div> 
+                <div class="info">
+                     <p class="semi-bold">VOX HUMANA SKILLS AND TRAINING PROGRAM (TESDA)</p> 
+                  <p>Hypertechnology Development System</p>
+                  <p>Basic Computer Literacy Program</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">2019</div>
+              <div class="info">
+                     <p class="semi-bold">PITCON</p> 
+                  <p>Animation and Entering the Industry</p>
+                  <p>Frontend is the new Backend</p>
+                  <p>Hacking 101 and Entering Cyber Security World</p>
+                  <p>Mozilla and the Open Web</p>
+                  <p>Keepung Your Web Performance in Check</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!------EDUCATION---->
+    <div class="resume_item resume_education">
+      <div class="title">
+           <p class="bold">Education</p>
+         </div>
+      <ul>
+            <li>
+                <div class="date">2007 - 2013</div> 
+                <div class="info">
+                     <p class="semi-bold">Elementary Graduate</p> 
+                  		<p>East Central School</p>
+                  		<p>Pob. East, Sta. Maria Pangasinan</p>
+                </div>
+            </li>
+            <li>
+              <div class="date">2013 - 2017</div>
+              <div class="info">
+                     <p class="semi-bold">Junior High School Graduate</p> 
+                  <p>Santa Maria East Integrated School</p>
+                  <p>Pob. East, Sta. Maria Pangasinan</p>
+                </div>
+            </li>
+             <li>
+              <div class="date">2017 - 2019</div>
+              <div class="info">
+                     <p class="semi-bold">Senior High School Graduate</p> 
+                  <p>Santa Maria East Integrated School</p>
+                  <p>Pob. East, Sta. Maria Pangasinan</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-----HOBBIES--->
+    <div class="resume_item resume_hobby">
+      <div class="title">
+           <p class="bold">Hobbies</p>
+         </div>
+       <ul>
+         <li><i class="fas fa-hamburger"></i></li>
+         <li><i class="fas fa-gamepad"></i></li>
+         <li><i class="fas fa-music"></i></li>
+         <li><i class="fas fa-camera"></i></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
